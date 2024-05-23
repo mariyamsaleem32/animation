@@ -1,0 +1,101 @@
+ body{
+    background-image: url('images/babies.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    size-adjust: 100%;
+    background-size: cover;
+    font-style: inherit;
+}
+button{
+    background-color: bisque;
+    font-size: larger;
+    text-align: center;
+}
+button:hover{
+    background-color: brown;
+    text-decoration: line-through;
+}
+p{
+    text-align: justify;
+    font-family: 'Times New Roman', Times, serif;
+    empty-cells: hide;
+}
+img{
+    scroll-behavior: auto;
+    width: 100px;
+    height: 130px;
+}
+marquee{
+  
+    color: brown;
+    font-size: 50px;
+    font-family: Arial, Helvetica, sans-serif;
+} 
+*{
+    animation: 10s
+    linear infinite;
+}
+.sky{
+    width: 100vw;
+    height: 100vh;
+    background-color: skyblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation-name: animate-sky;
+    position: relative;
+    overflow: hidden;
+}
+.sun,.moon{
+    position: absolute;
+    width: 50vmin;
+    height: 50vmin;
+    border-radius: 50%;
+}
+.sun{
+    background-color: gold;
+    animation-name:animate-sun;
+}
+@keyframes animate-sky
+{
+50%{
+background-color: black;
+}
+}
+@keyframes animate-sun
+{
+50%{
+    box-shadow: 0 0 5em 1em
+    white;}
+}
+@keyframes animate-moon
+{
+from{
+transform: translateX(-100 vmin);}
+50%{background-color: black;}
+to{
+    transform: translateX(100 vmin);}
+} 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
